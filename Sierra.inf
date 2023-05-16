@@ -1,0 +1,48 @@
+; The SIERRA.INF
+; This is a sample SIERRA.INF.  To build the INF for your project, start with 
+; this template and make the appropriate modifications.
+; This file must be on the root of the CD if the setup is compiled with _SIERRA defined.
+;
+; Created June 1997-  D'Andre Pritchett
+
+
+[Ident]
+ProductID=69987
+Version=1.0
+ShortTitle=CStorm2
+PatchVersion=1.0.0.0
+;UpdateAfter=3-31-1998
+
+WebPage=http://www.sierra.com
+
+;Readme=readme.wri
+StrippedDemo=0
+
+; The Bookmarks section is how Sierra InstallShield supports bookmark creation. 
+; As with the demos section this allows dynamic creation, so bookmarks can be 
+; added and removed without recompiling the entire script
+
+[Bookmarks]
+http://www.sierra.com=The Sierra Web Site
+
+
+[System Test]
+ScreenWidth=640
+ScreenHeight=480
+Colors=256
+MemKB=15500
+; WinVer is the minimum version of Windows required
+; Possible values are:
+; 310 for Windows 3.1x
+; 395 for Windows 95
+; 400 for Windows NT
+WinVer=395
+WinVer=400
+Wave=1
+MIDI=1
+
+Processor=486-100
+
+[Setup]
+InstallShield=1
+
